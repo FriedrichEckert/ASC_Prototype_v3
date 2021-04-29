@@ -1,0 +1,276 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B J4
+U 1 1 60C6CD43
+P 1600 3200
+AR Path="/60C6BAAF/60C6CD43" Ref="J4"  Part="1" 
+AR Path="/607AF1FD/60C6CD43" Ref="J?"  Part="1" 
+F 0 "J4" H 1657 3667 50  0000 C CNN
+F 1 "USB_B" H 1657 3576 50  0000 C CNN
+F 2 "CustomFootprints:USB_B_SMD" H 1750 3150 50  0001 C CNN
+F 3 " ~" H 1750 3150 50  0001 C CNN
+	1    1600 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 6750 3100 2    50   Input ~ 0
+DATA_TO_PC
+Text HLabel 6750 3000 2    50   Input ~ 0
+DATA_TO_MCU
+Wire Wire Line
+	6250 3000 6750 3000
+Wire Wire Line
+	6750 3100 6250 3100
+$Comp
+L power:GND #PWR0141
+U 1 1 60C6F510
+P 5700 4050
+AR Path="/60C6BAAF/60C6F510" Ref="#PWR0141"  Part="1" 
+AR Path="/607AF1FD/60C6F510" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0141" H 5700 3800 50  0001 C CNN
+F 1 "GND" H 5705 3877 50  0000 C CNN
+F 2 "" H 5700 4050 50  0001 C CNN
+F 3 "" H 5700 4050 50  0001 C CNN
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4050 5700 3700
+$Comp
+L Power_Protection:USBLC6-2P6 U4
+U 1 1 60C703FA
+P 3350 3650
+AR Path="/60C6BAAF/60C703FA" Ref="U4"  Part="1" 
+AR Path="/607AF1FD/60C703FA" Ref="U?"  Part="1" 
+F 0 "U4" V 3000 3900 50  0000 C CNN
+F 1 "USBLC6-2P6" V 3700 3200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-666" H 3350 3150 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 3550 4000 50  0001 C CNN
+	1    3350 3650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1900 3300 2550 3300
+Wire Wire Line
+	2550 3300 2550 4100
+Wire Wire Line
+	2550 4100 3250 4100
+Wire Wire Line
+	3250 4100 3250 4050
+Wire Wire Line
+	3450 4050 3450 4100
+Wire Wire Line
+	3450 4100 4200 4100
+Wire Wire Line
+	4200 4100 4200 3300
+Wire Wire Line
+	4200 3300 5100 3300
+Wire Wire Line
+	1900 3200 3250 3200
+Wire Wire Line
+	3250 3200 3250 3250
+Wire Wire Line
+	3450 3250 3450 3200
+Wire Wire Line
+	3450 3200 5100 3200
+$Comp
+L power:GND #PWR0142
+U 1 1 60C74B45
+P 2850 3750
+AR Path="/60C6BAAF/60C74B45" Ref="#PWR0142"  Part="1" 
+AR Path="/607AF1FD/60C74B45" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0142" H 2850 3500 50  0001 C CNN
+F 1 "GND" H 2855 3577 50  0000 C CNN
+F 2 "" H 2850 3750 50  0001 C CNN
+F 3 "" H 2850 3750 50  0001 C CNN
+	1    2850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3750 2850 3650
+Wire Wire Line
+	2850 3650 2950 3650
+Wire Wire Line
+	3750 3650 3900 3650
+Wire Wire Line
+	3900 3650 3900 3000
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 60C75EB9
+P 2750 3000
+AR Path="/60C6BAAF/60C75EB9" Ref="FB2"  Part="1" 
+AR Path="/607AF1FD/60C75EB9" Ref="FB?"  Part="1" 
+F 0 "FB2" V 2476 3000 50  0000 C CNN
+F 1 "Ferrite_Bead" V 2567 3000 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 2680 3000 50  0001 C CNN
+F 3 "~" H 2750 3000 50  0001 C CNN
+	1    2750 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 3000 1900 3000
+Wire Wire Line
+	2900 3000 3900 3000
+$Comp
+L Device:Varistor RV1
+U 1 1 60C77A81
+P 4450 3600
+AR Path="/60C6BAAF/60C77A81" Ref="RV1"  Part="1" 
+AR Path="/607AF1FD/60C77A81" Ref="RV?"  Part="1" 
+F 0 "RV1" H 4553 3646 50  0000 L CNN
+F 1 "Varistor" H 4553 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 3600 50  0001 C CNN
+F 3 "~" H 4450 3600 50  0001 C CNN
+	1    4450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 60C77EA3
+P 4450 4050
+AR Path="/60C6BAAF/60C77EA3" Ref="#PWR0143"  Part="1" 
+AR Path="/607AF1FD/60C77EA3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0143" H 4450 3800 50  0001 C CNN
+F 1 "GND" H 4455 3877 50  0000 C CNN
+F 2 "" H 4450 4050 50  0001 C CNN
+F 3 "" H 4450 4050 50  0001 C CNN
+	1    4450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4050 4450 3750
+Wire Wire Line
+	4450 3450 4450 3000
+Wire Wire Line
+	4450 3000 3900 3000
+Connection ~ 3900 3000
+$Comp
+L Device:Ferrite_Bead FB3
+U 1 1 60C78D6E
+P 4750 2600
+AR Path="/60C6BAAF/60C78D6E" Ref="FB3"  Part="1" 
+AR Path="/607AF1FD/60C78D6E" Ref="FB?"  Part="1" 
+F 0 "FB3" V 4476 2600 50  0000 C CNN
+F 1 "Ferrite_Bead" V 4567 2600 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 4680 2600 50  0001 C CNN
+F 3 "~" H 4750 2600 50  0001 C CNN
+	1    4750 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 2800 5700 2600
+Wire Wire Line
+	5700 2600 4900 2600
+Wire Wire Line
+	4600 2600 4450 2600
+Wire Wire Line
+	4450 2600 4450 3000
+Connection ~ 4450 3000
+$Comp
+L Device:C C21
+U 1 1 60C7A125
+P 5000 3800
+AR Path="/60C6BAAF/60C7A125" Ref="C21"  Part="1" 
+AR Path="/607AF1FD/60C7A125" Ref="C?"  Part="1" 
+F 0 "C21" H 5115 3846 50  0000 L CNN
+F 1 "100nF" H 5115 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5038 3650 50  0001 C CNN
+F 3 "~" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0144
+U 1 1 60C7A67C
+P 5000 4050
+AR Path="/60C6BAAF/60C7A67C" Ref="#PWR0144"  Part="1" 
+AR Path="/607AF1FD/60C7A67C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0144" H 5000 3800 50  0001 C CNN
+F 1 "GND" H 5005 3877 50  0000 C CNN
+F 2 "" H 5000 4050 50  0001 C CNN
+F 3 "" H 5000 4050 50  0001 C CNN
+	1    5000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3950 5000 4050
+Wire Wire Line
+	5000 3650 5000 3500
+Wire Wire Line
+	5000 3500 5100 3500
+Wire Wire Line
+	5000 3500 5000 3000
+Wire Wire Line
+	5000 3000 5100 3000
+Connection ~ 5000 3500
+Wire Wire Line
+	5850 2800 5850 2700
+Wire Wire Line
+	5850 2700 5000 2700
+Wire Wire Line
+	5000 2700 5000 3000
+Connection ~ 5000 3000
+$Comp
+L power:GND #PWR0145
+U 1 1 60C7DE6C
+P 1600 3900
+AR Path="/60C6BAAF/60C7DE6C" Ref="#PWR0145"  Part="1" 
+AR Path="/607AF1FD/60C7DE6C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0145" H 1600 3650 50  0001 C CNN
+F 1 "GND" H 1605 3727 50  0000 C CNN
+F 2 "" H 1600 3900 50  0001 C CNN
+F 3 "" H 1600 3900 50  0001 C CNN
+	1    1600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3900 1600 3700
+Wire Wire Line
+	1500 3600 1500 3700
+Wire Wire Line
+	1500 3700 1600 3700
+Connection ~ 1600 3700
+Wire Wire Line
+	1600 3700 1600 3600
+NoConn ~ 6250 3500
+$Comp
+L CustomSymbols---------------------:FT234XD-R U7
+U 1 1 60C6BF02
+P 5700 3250
+AR Path="/60C6BAAF/60C6BF02" Ref="U7"  Part="1" 
+AR Path="/607AF1FD/60C6BF02" Ref="U?"  Part="1" 
+F 0 "U7" H 5900 2850 50  0000 C CNN
+F 1 "FT234XD-R" H 5400 3650 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-12-1EP_3x3mm_P0.45mm_EP1.66x2.38mm" H 5700 3000 50  0001 C CNN
+F 3 "" H 5700 3000 50  0001 C CNN
+	1    5700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3200 6750 3200
+Text HLabel 6750 3200 2    50   Input ~ 0
+(~RTS~)
+Wire Wire Line
+	6250 3300 6750 3300
+Text HLabel 6750 3300 2    50   Input ~ 0
+~CTS
+Text HLabel 4050 2750 2    50   Input ~ 0
+VBUS
+Wire Wire Line
+	4050 2750 3900 2750
+Wire Wire Line
+	3900 2750 3900 3000
+$EndSCHEMATC
